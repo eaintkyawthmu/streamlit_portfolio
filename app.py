@@ -28,7 +28,7 @@ def main():
     pages = {
         "Home": home_show,
         "Resume": resume_show,
-        "Projects": projects_show,
+        # "Projects": projects_show,
         "Blog Posts": blog_posts_show,        
     }
 
