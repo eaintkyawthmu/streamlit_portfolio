@@ -11,7 +11,7 @@ def custom_footer():
     st.write('<div class="footer">Thank you for visiting!</div>', unsafe_allow_html=True)
 
     # Load and display social links
-    social_links_html = load_html("/home/eaint/projects/Self/OpenAI_Streamlit/data/html/social_links.html")
+    social_links_html = load_html("./data/html/social_links.html")
     st.markdown(social_links_html, unsafe_allow_html=True)
 
     st.markdown('<div class="footer">© 2021 AIML Journal. All rights reserved.</div>', unsafe_allow_html=True)

@@ -5,7 +5,7 @@ PROFILE = {
     "contact": "(657) 347-6537 | eaintkyawthmu@gmail.com",
     "linkedin": "https://www.linkedin.com/in/eaintkyawthmu",
     "github": "https://github.com/eaintkyawthmu",
-    "image": "/home/eaint/projects/Self/OpenAI_Streamlit/data/images/avatar.jpg",
+    "image": "./data/images/avatar.jpg",
     "location": "San Jose, CA 95110",
     "summary": "Driven by a passion for Artificial Intelligence and Machine Learning, I have recently graduated from Caltech, eager to leverage my skills in innovative projects within the industry. My background of over 8 years in marketing and business development, enriched by an intensive dive into AI and ML, uniquely positions me to bridge cutting-edge technology with impactful applications. Energetic and committed, I am prepared to contribute to projects that utilize AI for positive change. Authorized to work in the U.S. without visa sponsorship. ",
     "aboutme": "I am a seasoned entrepreneur turned data science enthusiast, with a rich background in digital marketing and a burgeoning passion for unlocking the secrets hidden within data. With over 8 years of experience in founding, leading, and nurturing digital enterprises, I've honed my skills in analytics, strategy, and innovation.",
@@ -28,7 +28,7 @@ projects = [
         "title": "AI/ML Capstone Project Participant",
         "description": "Caltech CTME",
         "duration": "Dec 2023 – Feb 2024",
-        "image": "/home/eaint/projects/Self/OpenAI_Streamlit/data/images/image1.png",
+        "image": "./data/images/image1.png",
         "github_link": "https://github.com/username/project1",
         "demo_link": "https://demo.com/project3",
         "details": [
@@ -46,7 +46,7 @@ projects = [
         "description": "Personal Project",
         "location": "San Jose, CA",
         "duration": "Apr 2023 - May 2023",
-        "image": "/home/eaint/projects/Self/OpenAI_Streamlit/data/images/image1.png",
+        "image": "./data/images/image1.png",
         "github_link": "https://github.com/username/project2",
         "demo_link": "https://demo.com/project3",
         "details": [
@@ -60,7 +60,7 @@ projects = [
         "description": "iDEAHUB Digital Marketing Agency",
         "location": "Remote",
         "duration": "Sep 2018 – Jun 2021",
-        "image": "/home/eaint/projects/Self/OpenAI_Streamlit/data/images/image1.png",
+        "image": "./data/images/image1.png",
         "github_link": "https://github.com/username/project3",
         "demo_link": "https://demo.com/project1",
         "details": [
@@ -72,7 +72,7 @@ projects = [
         "title": "AI/ML Capstone Project Participant",
         "description": "Caltech CTME",
         "duration": "Dec 2023 – Feb 2024",
-        "image": "/home/eaint/projects/Self/OpenAI_Streamlit/data/images/image1.png",
+        "image": "./data/images/image1.png",
         "github_link": "https://github.com/username/project4",
         "demo_link": "https://demo.com/project3",
         "details": [
@@ -90,7 +90,7 @@ projects = [
         "description": "Personal Project",
         "location": "San Jose, CA",
         "duration": "Apr 2023 - May 2023",
-        "image": "/home/eaint/projects/Self/OpenAI_Streamlit/data/images/image1.png",
+        "image": "./data/images/image1.png",
         "github_link": "https://github.com/username/project5",
         "demo_link": "https://demo.com/project3",
         "details": [
@@ -104,7 +104,7 @@ projects = [
         "description": "iDEAHUB Digital Marketing Agency",
         "location": "Remote",
         "duration": "Sep 2018 – Jun 2021",
-        "image": "/home/eaint/projects/Self/OpenAI_Streamlit/data/images/image1.png",
+        "image": "./data/images/image1.png",
         "github_link": "https://github.com/username/project6",
         "demo_link": "https://demo.com/project1",
         "details": [
@@ -116,7 +116,7 @@ projects = [
         "title": "AI/ML Capstone Project Participant",
         "description": "Caltech CTME",
         "duration": "Dec 2023 – Feb 2024",
-        "image": "/home/eaint/projects/Self/OpenAI_Streamlit/data/images/image1.png",
+        "image": "./data/images/image1.png",
         "github_link": "https://github.com/username/project7",
         "demo_link": "https://demo.com/project3",
         "details": [
@@ -134,7 +134,7 @@ projects = [
         "description": "Personal Project",
         "location": "San Jose, CA",
         "duration": "Apr 2023 - May 2023",
-        "image": "/home/eaint/projects/Self/OpenAI_Streamlit/data/images/image1.png",
+        "image": "./data/images/image1.png",
         "github_link": "https://github.com/username/project8",
         "demo_link": "https://demo.com/project3",
         "details": [
@@ -148,7 +148,7 @@ projects = [
         "description": "iDEAHUB Digital Marketing Agency",
         "location": "Remote",
         "duration": "Sep 2018 – Jun 2021",
-        "image": "/home/eaint/projects/Self/OpenAI_Streamlit/data/images/image1.png",
+        "image": "./data/images/image1.png",
         "github_link": "https://github.com/username/project9",
         "demo_link": "https://demo.com/project1",
         "details": [

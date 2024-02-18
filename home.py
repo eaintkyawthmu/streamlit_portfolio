@@ -23,7 +23,7 @@ def display_profile():
             def load_html(file_name):        
                 with open(file_name, 'r', encoding='utf-8') as file:
                     return file.read()
-            social_links_html = load_html("/home/eaint/projects/Self/OpenAI_Streamlit/data/html/social_links.html")
+            social_links_html = load_html("./data/html/social_links.html")
             st.markdown(social_links_html, unsafe_allow_html=True)
         with in_col3:
             #st.image("https://user-images.githubusercontent.com/27065646/53551960-ae4dff80-3b3a-11e9-9075-cef786c69364.png", width=200, caption='photos by Sherlock Project', use_column_width=False)  # Display profile image

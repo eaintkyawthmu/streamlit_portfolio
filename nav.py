@@ -24,7 +24,7 @@ def custom_navigation(pages):
  
     st.sidebar.write("<small>Download My Onepage Resume in docx format...</small>", unsafe_allow_html=True)
     # Resume download button
-    with open("/home/eaint/projects/Self/OpenAI_Streamlit/data/resume/eaintkyawthmu_resume2024.docx", "rb") as file: 
+    with open("./data/resume/eaintkyawthmu_resume2024.docx", "rb") as file: 
         
         btn = st.sidebar.download_button(
             label="Download My Resume",

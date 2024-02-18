@@ -14,7 +14,7 @@ def display_profile(profile):
         with st.expander("Download resume in .docx ..."):
             st.write("Click the button below to download my onepage resume.")
             # Resume download button
-            with open("/home/eaint/projects/Self/OpenAI_Streamlit/data/resume/eaintkyawthmu_resume2024.docx", "rb") as file:
+            with open("./data/resume/eaintkyawthmu_resume2024.docx", "rb") as file:
                 btn = st.download_button(
                     label="Download My Resume",
                     data=file,
