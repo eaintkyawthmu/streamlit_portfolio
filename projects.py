@@ -18,11 +18,11 @@ def show():
             subcol1, subcol2 = st.columns(2)
             with subcol1:
                 st.write(project['description'])
-                if project.get('demo_link'):
-                    # Use markdown to create a clickable link instead of a button
-                    demo_link = project['demo_link']
-                    demo_text = f"[Demo]({demo_link})"
-                    st.markdown(f"#### {demo_text}")
+                # if project.get('demo_link'):
+                #     # Use markdown to create a clickable link instead of a button
+                #     demo_link = project['demo_link']
+                #     demo_text = f"[Demo]({demo_link})"
+                #     st.markdown(f"#### {demo_text}")
                     
                 if project.get('github_link'):
                     # Use markdown to create a clickable link instead of a button

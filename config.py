@@ -28,8 +28,8 @@ projects = [
         "title": "AI/ML Capstone Project Participant",
         "description": "Caltech CTME",
         "duration": "Dec 2023 – Feb 2024",
-        "image": "./data/images/image1.png",
-        "github_link": "https://github.com/username/project1",
+        "image": "./data/images/projects/cancergenes_project.png",
+        "github_link": "https://github.com/eaintkyawthmu/caltech_capstone_project",
         "demo_link": "https://demo.com/project3",
         "details": [
             "Led the ICMR Cancer Genes Analysis project, applying PCA, LDA, and t-SNE for gene expression data analysis.",
@@ -46,8 +46,8 @@ projects = [
         "description": "Personal Project",
         "location": "San Jose, CA",
         "duration": "Apr 2023 - May 2023",
-        "image": "./data/images/image1.png",
-        "github_link": "https://github.com/username/project2",
+        "image": "./data/images/projects/amazon_scraper.png",
+        "github_link": "https://github.com/eaintkyawthmu/Amazon-Bestseller-Scraper",
         "demo_link": "https://demo.com/project3",
         "details": [
             "Developed a Python-based web scraper to efficiently extract data from Amazon's Best-sellers page.",

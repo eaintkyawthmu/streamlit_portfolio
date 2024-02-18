@@ -25,6 +25,7 @@ def main():
     #https://picsum.photos/536/354
 
     # Define your pages
+    
     pages = {
         "Home": home_show,
         "Resume": resume_show,
