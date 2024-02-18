@@ -10,7 +10,7 @@ def show():
 
     # Display projects in a single column layout
     for project in projects:
-        col1, col2, col3 = st.columns([1, 1, 1], gap="large")
+        col1, col2 = st.columns([1, 1], gap="large")
         st.markdown("##")
         st.markdown("##")
         with col1:
@@ -41,18 +41,18 @@ def show():
                 for detail in project['details']:
                     st.markdown(f"- {detail}")
 
-        with col3:
-            st.image(project.get('image', ''), width=300)  # Display image if exists
-            subcol1, subcol2 = st.columns(2)
-            with subcol1:
-                st.markdown(f"**{project['title']}**")
-                st.write(project['description'])
-            with subcol2:
-                st.write(project['duration'])
-                if project.get('github_link'):
-                    st.button(f'GitHub {project["project_id"]}_col3', on_click=lambda: st.query_params(url=project['github_link']))
-            with st.expander("Brief Project Descriptions"):
-                for detail in project['details']:
-                    st.markdown(f"- {detail}")
+        # with col3:
+        #     st.image(project.get('image', ''), width=300)  # Display image if exists
+        #     subcol1, subcol2 = st.columns(2)
+        #     with subcol1:
+        #         st.markdown(f"**{project['title']}**")
+        #         st.write(project['description'])
+        #     with subcol2:
+        #         st.write(project['duration'])
+        #         if project.get('github_link'):
+        #             st.button(f'GitHub {project["project_id"]}_col3', on_click=lambda: st.query_params(url=project['github_link']))
+        #     with st.expander("Brief Project Descriptions"):
+        #         for detail in project['details']:
+        #             st.markdown(f"- {detail}")
 
-projects = projects[3:]
+projects = projects[2:]

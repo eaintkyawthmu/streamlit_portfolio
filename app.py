@@ -9,7 +9,7 @@ from projects import show as projects_show
 st.set_page_config(
     page_title="AIML Journal",
     page_icon=":computer:",
-    layout="wide",
+    layout="centered",
     initial_sidebar_state="expanded"
 )
 # Function to load CSS
