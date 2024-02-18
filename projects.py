@@ -56,7 +56,3 @@ def show():
                     st.markdown(f"- {detail}")
 
 projects = projects[3:]
-# Pagination
-if st.button("Next Page"):
-    projects = projects[6:]  # Assuming each page displays 6 projects
-    show_projects()

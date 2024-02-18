@@ -1,6 +1,7 @@
 import streamlit as st
 from config import PROFILE, education, experiences, projects
 from life import show as life_show
+from streamlit_option_menu import option_menu
 import requests
 import json
 
