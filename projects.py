@@ -7,52 +7,35 @@ from config import projects
 def show():
     st.title("Projects")
     st.write("Welcome to the projects page! Here's a glimpse of the projects I've been working on.")
-
-    # Display projects in a single column layout
+    
     for project in projects:
         col1, col2 = st.columns([1, 1], gap="large")
-        st.markdown("##")
-        st.markdown("##")
         with col1:
-            st.image(project.get('image', ''), width=300)  # Display image if exists
-            subcol1, subcol2 = st.columns(2)
-            with subcol1:
-                st.markdown(f"**{project['title']}**")
-                st.write(project['description'])
-            with subcol2:
-                st.write(project['duration'])
-                if project.get('github_link'):
-                    st.button(f'GitHub {project["project_id"]}_col1', on_click=lambda: st.query_params(url=project['github_link']))
-            with st.expander("Brief Project Descriptions"):
-                for detail in project['details']:
-                    st.markdown(f"- {detail}")
-
+            if project.get('image'):  # Check if the image exists before displaying
+                st.image(project.get('image'), width=350)
         with col2:
-            st.image(project.get('image', ''), width=300)  # Display image if exists
+            st.markdown(f"#### {project['title']}")
             subcol1, subcol2 = st.columns(2)
             with subcol1:
-                st.markdown(f"**{project['title']}**")
                 st.write(project['description'])
+                if project.get('demo_link'):
+                    # Use markdown to create a clickable link instead of a button
+                    demo_link = project['demo_link']
+                    demo_text = f"[Demo]({demo_link})"
+                    st.markdown(f"#### {demo_text}")
+                    
+                if project.get('github_link'):
+                    # Use markdown to create a clickable link instead of a button
+                    github_link = project['github_link']
+                    link_text = f"[GitHub]({github_link})"
+                    st.markdown(f"#### {link_text}")
+
             with subcol2:
                 st.write(project['duration'])
-                if project.get('github_link'):
-                    st.button(f'GitHub {project["project_id"]}_col2', on_click=lambda: st.query_params(url=project['github_link']))
-            with st.expander("Brief Project Descriptions"):
-                for detail in project['details']:
-                    st.markdown(f"- {detail}")
+                st.markdown("##")
 
-        # with col3:
-        #     st.image(project.get('image', ''), width=300)  # Display image if exists
-        #     subcol1, subcol2 = st.columns(2)
-        #     with subcol1:
-        #         st.markdown(f"**{project['title']}**")
-        #         st.write(project['description'])
-        #     with subcol2:
-        #         st.write(project['duration'])
-        #         if project.get('github_link'):
-        #             st.button(f'GitHub {project["project_id"]}_col3', on_click=lambda: st.query_params(url=project['github_link']))
-        #     with st.expander("Brief Project Descriptions"):
-        #         for detail in project['details']:
-        #             st.markdown(f"- {detail}")
+        with st.expander("Brief Project Descriptions"):
 
-projects = projects[2:]
+            for detail in project['details']:
+                st.markdown(f"- {detail}")
+        st.markdown("##")

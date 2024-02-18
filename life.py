@@ -227,7 +227,7 @@ def show():
                     st.write("#")
                     st.write("---")
                 with col2:
-                    st.image("https://picsum.photos/200/200", caption="")
+                    st.image("./data/images/life/16310490897.jpg", caption="")
                 with col3:
                     st.markdown('<small> Feb 2020  <br> ~ <br> Mar 2020 </small>', unsafe_allow_html=True)
             with main_col3:

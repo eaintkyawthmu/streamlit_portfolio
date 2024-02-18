@@ -1,10 +1,13 @@
 import streamlit as st
 from config import PROFILE, education, experiences, projects
-from life import show as life_show
+from projects import show as projects_show
 from streamlit_option_menu import option_menu
 import requests
 import json
 
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 def display_profile():
     
@@ -74,9 +77,10 @@ def display_sanityposts():
 #     st.write("---")
 
 def show():
+    local_css("style.css")  # Load CSS
     display_profile()
-    life_show()
-    display_sanityposts()
+    projects_show()
+    # display_sanityposts()
 
 
 # def misc():
