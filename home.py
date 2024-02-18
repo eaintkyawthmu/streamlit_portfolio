@@ -5,7 +5,11 @@ from streamlit_option_menu import option_menu
 import requests
 import json
 
-
+# Function to load CSS
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+        
 def display_profile():
     
     col1, col2 = st.columns([0.7, 0.3])
@@ -77,7 +81,7 @@ def show():
     display_profile()
     projects_show()
     # display_sanityposts()
-
+    local_css("style.css")
 
 # def misc():
        
