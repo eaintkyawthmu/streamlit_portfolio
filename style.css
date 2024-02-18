@@ -43,7 +43,7 @@ blockquote {
 }
 
 p {
-    color: #333;
+    /* color: #333; */
     font-size: 15px;
     font-family: 'Bitter', sans-serif;  
 }
